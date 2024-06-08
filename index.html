@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="whole">
+        <div class="input">
+          <div class="header">
+            <h1>To-do <span>LIST</span></h1>
+          </div>
+          <form
+            action=""
+            method="POST"
+            class="input-inner"
+            onsubmit="return false"
+          >
+            <div class="field task">
+              <label for="task">Task</label>
+              <div class="row">
+                <input
+                  type="text"
+                  name="task"
+                  placeholder="<Enter your task here>"
+                  id="task"
+                  class="box"
+                />
+              </div>
+            </div>
+
+            <div class="field priority-select">
+              <label for="priority">Priority (High, Medium, Low)</label>
+
+              <select name="priority" id="priority" class="box" required>
+                <option class="placeholder" selected>
+                  &lt;Select priority&gt;
+                </option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
+          </form>
+          <button class="input-button">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/10100/10100949.png"
+            />
+          </button>
+        </div>
+        <div class="output">
+          <ul class="ul"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
